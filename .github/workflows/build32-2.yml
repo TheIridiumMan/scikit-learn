@@ -30,7 +30,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install wheel joblib threadpoolctl meson meson-python
+        pip install wheel joblib threadpoolctl meson meson-python ninja
         pip install --prefer-binary cython numpy==1.24.4 scipy==1.9.1  # Install Cython if required by Scikit-learn
 
     - name: Build Scikit-learn
