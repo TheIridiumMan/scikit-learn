@@ -1,4 +1,4 @@
-onname: Build Scikit-learn for Windows 32-bit
+name: Build Scikit-learn for Windows 32-bit
 
 on:
   push:
