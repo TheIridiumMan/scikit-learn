@@ -29,7 +29,6 @@ jobs:
     - name: Install MinGW
       run: |
         choco install mingw
-        refreshenv
 
     - name: Add MinGW to Path
       run: echo "::add-path::C:\\tools\\mingw64\\bin"
