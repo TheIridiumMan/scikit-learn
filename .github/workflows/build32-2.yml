@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         python-version: [3.9.13]  # Specify the Python version you want to use
-        architecture: [32]
+        architecture: [x86]
 
     steps:
     - name: Checkout code
