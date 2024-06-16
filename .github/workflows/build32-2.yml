@@ -1,4 +1,4 @@
-name: Build Scikit-learn for Windows 32-bit
+onname: Build Scikit-learn for Windows 32-bit
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install wheel joblib threadpoolctl meson
+        pip install wheel joblib threadpoolctl meson meson-python
         pip install --prefer-binary cython numpy==1.24.4 scipy==1.9.1  # Install Cython if required by Scikit-learn
 
     - name: Build Scikit-learn
