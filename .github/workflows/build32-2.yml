@@ -35,7 +35,7 @@ jobs:
 
     - name: Build Scikit-learn
       run: |
-        pip install --no-build-isolation --no-use-pep517 scikit-learn  # Install Scikit-learn from source
+        pip install --no-build-isolation scikit-learn  # Install Scikit-learn from source
 
     - name: Test Scikit-learn
       run: |
