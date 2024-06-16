@@ -26,12 +26,11 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         architecture: ${{ matrix.architecture }}
-    - name: Install MinGW
+    
+    - name: Set up MSVC
       run: |
-        choco install mingw
+        call "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Auxiliary\Build\vcvars32.bat"
 
-    - name: Add MinGW to Path
-      run: echo "::add-path::C:\\tools\\mingw64\\bin"
 
     - name: Install dependencies
       run: |
