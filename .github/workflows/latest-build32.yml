@@ -44,7 +44,7 @@ jobs:
         echo "VCINSTALLDIR=C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC" >> $GITHUB_ENV
         
     - name: Set up MinGW
-      uses: egor-tensin/setup-mingw@v2
+      uses: TheIridiumMan/setup-mingw@v2
       with:
         platform: x32
         static: 0
