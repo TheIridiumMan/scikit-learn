@@ -46,7 +46,7 @@ jobs:
     - name: Build Scikit-learn
       run: |
         git submodule update --init --recursive
-        "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Auxiliary\Build\vcvarsall.bat" x86
+        "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Auxiliary\Build\vcvars32.bat"
         pip install --editable . --verbose --no-build-isolation --config-settings editable-verbose=true
 
     - name: Build wheel for Python ${{ matrix.python-version }}
