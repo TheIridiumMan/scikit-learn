@@ -42,6 +42,12 @@ jobs:
       run: |
         echo "DISTUTILS_USE_SDK=1" >> $GITHUB_ENV
         echo "VCINSTALLDIR=C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC" >> $GITHUB_ENV
+        
+    - name: Set up GCC
+      uses: egor-tensin/setup-gcc@v1
+      with:
+        version: latest
+        platform: x64
 
     - name: Build Scikit-learn
       run: |
