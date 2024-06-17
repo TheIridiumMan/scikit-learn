@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [3.9.18]
+        python-version: [3.9.13]
         architecture: [x86]
 
     steps:
