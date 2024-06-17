@@ -48,6 +48,7 @@ jobs:
       with:
         platform: x32
         static: 1
+        version: 13.2.0
         
       
     - name: Build Scikit-learn
